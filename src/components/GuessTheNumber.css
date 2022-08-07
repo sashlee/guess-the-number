@@ -1,0 +1,74 @@
+.container {
+  padding: 100px;
+  background: #132531;
+  color: #132531;
+}
+.card-container {
+  width: 450px;
+  margin: auto;
+  background: #ffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px 2px #333;
+}
+.guess-input {
+  padding: 10px 30px;
+  border: 2px solid maroon;
+  font-size: 15px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.guess-button {
+  padding: 10px 30px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: maroon;
+  color: #fff;
+  border: 2px solid maroon;
+  font-size: 15px;
+}
+
+.reset-button {
+  background: maroon;
+  color: #fff;
+  border: 2px solid maroon;
+  font-size: 15px;
+  margin-top: 20px;
+  width: 360px;
+  border-radius: 6px;
+  padding: 10px 30px;
+}
+
+.previous-guess {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  width: 200px;
+  margin: auto;
+}
+
+.success {
+  background-color: "#D1E7DD";
+  color: "#157347";
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+.warning {
+  background-color: "#F8D7DA";
+  color: "#843D62";
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+.bound-input {
+  padding: 10px;
+  width: 340px;
+  border: 2px solid maroon;
+  border-radius: 6px;
+  margin-top: 15px;
+}
