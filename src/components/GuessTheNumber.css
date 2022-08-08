@@ -11,7 +11,7 @@
   border-radius: 10px;
   box-shadow: 0px 1px 2px 2px #333;
 }
-.guess-input {
+.input {
   padding: 10px 30px;
   border: 2px solid maroon;
   font-size: 15px;
@@ -19,23 +19,14 @@
   border-bottom-left-radius: 6px;
 }
 
-.guess-button {
-  padding: 10px 30px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  background: maroon;
-  color: #fff;
-  border: 2px solid maroon;
-  font-size: 15px;
-}
+/*  */
 
-.reset-button {
+.button {
   background: maroon;
   color: #fff;
   border: 2px solid maroon;
   font-size: 15px;
   margin-top: 20px;
-  width: 360px;
   border-radius: 6px;
   padding: 10px 30px;
 }
@@ -64,11 +55,4 @@
   padding: 10px;
   text-align: center;
   margin: auto;
-}
-.bound-input {
-  padding: 10px;
-  width: 340px;
-  border: 2px solid maroon;
-  border-radius: 6px;
-  margin-top: 15px;
 }

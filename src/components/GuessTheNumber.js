@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Button from "./Button";
+import Input from "./Input";
 
 const GuessTheNumber = () => {
   const randInt = (lower, upper) => {
@@ -79,31 +81,25 @@ const GuessTheNumber = () => {
           </div>
 
           <form onSubmit={handleGuess}>
-            <label htmlFor="guess-input">Guess: </label>
-            <input
-              type="text"
-              className="guess-input"
-              placeholder="Enter a number"
-              id="guess-input"
+            <Input
               onChange={(e) => setGuess(e.target.value)}
+              placeholder={"Enter a number"}
+              id={"guess-input"}
+              type={"text"}
             />
-            <button
-              type="submit"
-              className="guess-button"
+            <Button
               onClick={handleGuess}
-            >
-              Guess
-            </button>
-          </form>
-          {/* <form onSubmit={handleGuess}>
-            <label htmlFor="guess-input">Guess: </label>
-            <input
-              type="number"
-              id="guess-input"
-              onChange={(e) => setGuess(e.target.value)}
+              id={"guess"}
+              type={"submit"}
+              style={{
+                width: "auto",
+                borderBottomLeftRadius: "0px",
+                borderTopLeftRadius: "0px",
+              }}
+              value={"Guess"}
             />
-            <input type="submit" value="Make Guess" />
-          </form> */}
+          </form>
+
           <div style={{ marginTop: "20px" }}>
             <p className="previous-guess">Previous Guess: {prevGuess}</p>
           </div>
@@ -112,29 +108,35 @@ const GuessTheNumber = () => {
         <section>
           <h3>Game Config</h3>
           <form onSubmit={handleReset}>
-            <input
-              type="lower"
-              placeholder="Enter lower bound"
-              id="lower"
-              className="bound-input"
+            <Input
               onChange={(e) => setLower(e.target.value)}
+              placeholder={"Enter lower bound"}
+              id={"lower"}
+              type={"lower"}
+              style={{ width: "340px", padding: "10px", borderRadius: "6px" }}
             />
             <br />
-            <input
-              type="upper"
-              id="upper"
-              placeholder="Enter upper bound"
-              className="bound-input"
+
+            <Input
               onChange={(e) => setUpper(e.target.value)}
-            />{" "}
+              placeholder={"Enter upper bound"}
+              id={"upper"}
+              type={"upper"}
+              style={{
+                width: "340px",
+                padding: "10px",
+                borderRadius: "6px",
+                marginTop: "15px",
+              }}
+            />
             <br />
-            <button
-              type="submit"
-              className="reset-button"
+            <Button
               onClick={handleReset}
-            >
-              Reset
-            </button>
+              id={"reset"}
+              type={"submit"}
+              style={{ width: "360px" }}
+              value={"Reset"}
+            />
           </form>
         </section>
       </div>
